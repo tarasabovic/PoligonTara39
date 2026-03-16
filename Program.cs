@@ -11,8 +11,13 @@ namespace PoligonTara39
         static void Main(string[] args)
         {
             //Tara Sabovic
-            Tacka prva = new Tacka();
-            Console.WriteLine(prva.d());
+            // Tacka prva = new Tacka();
+            // Console.WriteLine(prva.d());
+            Tacka A = new Tacka(1, 2);
+            Tacka B = new Tacka(2, 3);
+            Vektor AB = new Vektor(A, B);
+            Tacka C = AB.Centriraj();
+            Console.WriteLine(C.d());
         }
     }
 }
