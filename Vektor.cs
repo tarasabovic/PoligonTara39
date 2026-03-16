@@ -8,7 +8,7 @@ namespace PoligonTara39
 {
     internal class Vektor
     {
-        Tacka pocetak, kraj;
+        public Tacka pocetak, kraj;
         public Vektor (Tacka A, Tacka B)
         {
             pocetak = A;
