@@ -11,7 +11,8 @@ namespace PoligonTara39
         static void Main(string[] args)
         {
             //Tara Sabovic
-
+            Tacka prva = new Tacka();
+            Console.WriteLine(prva.d());
         }
     }
 }
