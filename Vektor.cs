@@ -9,7 +9,7 @@ namespace PoligonTara39
     internal class Vektor
     {
         public Tacka pocetak, kraj;
-        public Vektor (Tacka A, Tacka B)
+        public Vektor(Tacka A, Tacka B)
         {
             pocetak = A;
             kraj = B;
@@ -31,6 +31,7 @@ namespace PoligonTara39
             Tacka bC = b.Centriraj();
             return aC.x * bC.y - bC.x * aC.y;
         }
+
     }
-    
+
 }
