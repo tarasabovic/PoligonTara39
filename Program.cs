@@ -24,6 +24,7 @@ namespace PoligonTara39
             Vektor OA = new Vektor(O, A);
             Vektor OB = new Vektor(O, B);
             Console.WriteLine(Vektor.SP(OA, OB));
+            Console.WriteLine(Vektor.VP(OA, OB));
         }
     }
 }
