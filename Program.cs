@@ -28,12 +28,14 @@ namespace PoligonTara39
             Console.WriteLine(Vektor.SP(OA, OB));
             Console.WriteLine(Vektor.VP(OB, OA));
             */
-            Tacka A = new Tacka(5, 3);
-            Tacka B = new Tacka(5, 5);
-            Tacka prva = new Tacka(3, 2);
-            Tacka druga = new Tacka(7, 6);
-            Vektor a = new Vektor(prva, druga);
-            Console.WriteLine(Ravan.SIS(a, A, B));
+            //Tacka A = new Tacka(5, 3);
+            //Tacka B = new Tacka(5, 5);
+            //Tacka prva = new Tacka(3, 2);
+            //Tacka druga = new Tacka(7, 6);
+            //Vektor a = new Vektor(prva, druga);
+            //Console.WriteLine(Ravan.SIS(a, A, B));
+            Poligon prvi = Poligon.unos();
+            prvi.snimi();
         }
     }
 }
