@@ -36,6 +36,7 @@ namespace PoligonTara39
             //Console.WriteLine(Ravan.SIS(a, A, B));
             Poligon prvi = Poligon.unos();
             prvi.snimi();
+            prvi.stampa();
         }
     }
 }
