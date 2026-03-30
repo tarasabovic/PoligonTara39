@@ -31,6 +31,12 @@ namespace PoligonTara39
             Tacka bC = b.Centriraj();
             return aC.x * bC.y - bC.x * aC.y;
         }
+        public double duzina()
+        {
+            Tacka A = this.Centriraj();
+            double duzina = A.d();
+            return duzina;
+        }
 
     }
 

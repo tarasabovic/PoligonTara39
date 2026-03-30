@@ -32,6 +32,19 @@ namespace PoligonTara39
             }
             return novi;
         }
+        public double obim()
+        {
+            Vektor a;
+            double obim = 0;
+            for (int i = 0; i < br_temena-1; i++)
+            {
+                a = new Vektor(teme[i], teme[i+1]);
+                obim += a.duzina();
+            }
+            a = new Vektor(teme[br_temena], teme[0]);
+            obim += a.duzina();
+            return 0;
+        }
         public void stampa()
         {
             Console.WriteLine("Vas poligon: ");
@@ -54,7 +67,17 @@ namespace PoligonTara39
         }
         public static Poligon ucitaj()
         {
-            return null;
+            StreamReader ulaz = new StreamReader("poligon.txt");
+            int n = Convert.ToInt32(ulaz.ReadLine());
+            Poligon novi = new Poligon(n);
+            for (int i = 0; i < n; i++)
+            {
+                novi.teme[i] = new Tacka();
+                novi.teme[i].x = Convert.ToDouble(ulaz.ReadLine());
+                novi.teme[i].y = Convert.ToDouble(ulaz.ReadLine());
+            }
+            ulaz.Close();
+            return novi;
         }
     }
 }

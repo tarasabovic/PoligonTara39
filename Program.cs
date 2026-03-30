@@ -34,6 +34,7 @@ namespace PoligonTara39
             //Tacka druga = new Tacka(7, 6);
             //Vektor a = new Vektor(prva, druga);
             //Console.WriteLine(Ravan.SIS(a, A, B));
+            //Poligon prvi = Poligon.unos();
             Poligon prvi = Poligon.unos();
             prvi.snimi();
             prvi.stampa();
