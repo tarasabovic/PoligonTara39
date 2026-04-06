@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PoligonTara39
+namespace poligon_3_9b_2026
 {
     internal class Tacka
     {
@@ -21,6 +21,10 @@ namespace PoligonTara39
         public double d()
         {
             return Math.Sqrt(x * x + y * y);
+        }
+        public static bool jednake(Tacka A, Tacka B)
+        {
+            return (A.x == B.x) && (A.y == B.y);
         }
     }
 }

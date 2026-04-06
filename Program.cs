@@ -38,6 +38,7 @@ namespace PoligonTara39
             Poligon prvi = Poligon.unos();
             prvi.snimi();
             prvi.stampa();
+            Console.WriteLine("obim={0}", prvi.obim());
         }
     }
 }

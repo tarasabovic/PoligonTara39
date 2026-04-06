@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PoligonTara39
+namespace poligon_3_9b_2026
 {
     internal class Ravan
     {

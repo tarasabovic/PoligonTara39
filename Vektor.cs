@@ -1,10 +1,11 @@
-﻿using System;
+﻿using PoligonTara39;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PoligonTara39
+namespace poligon_3_9b_2026
 {
     internal class Vektor
     {
@@ -37,7 +38,14 @@ namespace PoligonTara39
             double duzina = A.d();
             return duzina;
         }
-
+        public static bool seku_se(Vektor a, Vektor b)
+        {
+            int a_b = Ravan.SIS(a, b.pocetak, b.kraj);
+            int b_a = Ravan.SIS(b, a.pocetak, a.kraj);
+            if ((a_b != 0) && (b_a != 0)) return true;
+            return false;
+        }
     }
+
 
 }
