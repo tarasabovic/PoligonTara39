@@ -109,5 +109,31 @@ namespace poligon_3_9b_2026
             }
             return true;
         }
+        public bool koveksan()
+        {
+            int brojac = 0;
+            for (int i = 0; i < br_temena; i++)
+            {
+                Vektor prvi = new Vektor(teme[i], teme[(i + 1) % br_temena]);
+                Vektor drugi = new Vektor(teme[(i + 1) % br_temena], teme[(i + 2) % br_temena]);
+                if (Vektor.VP(prvi, drugi) > 0) brojac++;
+            }
+            if ((brojac == br_temena) || (brojac == 0)) return true;
+            return false;
+        }
+        public double povrsina()
+        {
+            double plus = 0, minus = 0;
+            for (int i=0; i < br_temena; i++)
+            {
+                plus += teme[i].x * teme[(i + 1) % br_temena].y;
+                minus += teme[i].y * teme[(i + 1) % br_temena].x;
+            }
+            return Math.Abs(plus - minus);
+        }
+        public bool tacka_u(Tacka T)
+        {
+            return false;
+        }
     }
 }
